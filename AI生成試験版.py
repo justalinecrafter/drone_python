@@ -592,30 +592,30 @@ print("映像取得開始...")
 #   例:takeoff_and_land_on_qr(3, 4, "turn", camera_angle)
 #       → 3番のQRを目印に近づき、真下を向いたら4番のQRに着陸する
 
-# ---------- 0番のQRに着陸 ----------
-camera_angle = set_camera_angle(45)
+# # ---------- 0番のQRに着陸 ----------
+# camera_angle = set_camera_angle(45)
 
-# SPS/PPSが届くまで待機
-time.sleep(3)
+# # SPS/PPSが届くまで待機
+# time.sleep(3)
 
-takeoff_and_land_on_qr(0, 0, "forward", camera_angle)
+# takeoff_and_land_on_qr(0, 0, "forward", camera_angle)
 
-# ---------- 1番のQRに着陸 ----------
-# 10秒待機
-time.sleep(10)
-camera_angle = set_camera_angle(45)
-takeoff_and_land_on_qr(1, 1, "turn", camera_angle)
-
-# ---------- 2番のQRに着陸 ----------
-# 10秒待機
-time.sleep(10)
-camera_angle = set_camera_angle(45)
-takeoff_and_land_on_qr(2, 2, "turn", camera_angle)
-
-# ---------- 色紙に着陸する場合の例 ----------
-# 使うときは、行の先頭の「# 」を消す
-# 色は "R"(赤)、"G"(緑)、"B"(青) で指定する
-#
+# # ---------- 1番のQRに着陸 ----------
+# # 10秒待機
 # time.sleep(10)
 # camera_angle = set_camera_angle(45)
-# takeoff_and_land_on_color("R", "turn", camera_angle)
+# takeoff_and_land_on_qr(1, 1, "turn", camera_angle)
+
+# # ---------- 2番のQRに着陸 ----------
+# # 10秒待機
+# time.sleep(10)
+# camera_angle = set_camera_angle(45)
+# takeoff_and_land_on_qr(2, 2, "turn", camera_angle)
+
+# ---------- 色紙に着陸する場合の例 ----------
+# # 使うときは、行の先頭の「# 」を消す
+# 色は "R"(赤)、"G"(緑)、"B"(青) で指定する
+
+time.sleep(10)
+camera_angle = set_camera_angle(45)
+takeoff_and_land_on_color("R", "turn", camera_angle)
